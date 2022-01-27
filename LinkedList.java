@@ -120,20 +120,4 @@ public class LinkedList {
 		}
 		return null;
 	}
-	
-	public String toString() {
-		if (count == 0) {
-			return "<Empty>";
-		} else {
-			Node tmp = head;
-			String rtn = "";
-			
-			while(tmp != null) {
-				rtn += "\"" + tmp.getData() + "\" -> "; 
-				tmp = tmp.getNext();
-			}
-			rtn += "null";
-			return rtn;
-		}
-	}
 }
