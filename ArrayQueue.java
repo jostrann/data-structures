@@ -16,7 +16,6 @@ public class ArrayQueue {
 		if (isFull()) {
 			return false;
 		}
-		
 		queue[tail++] = data;
 		if (tail == QUEUE_SIZE) {
 			tail = 0;
@@ -33,9 +32,7 @@ public class ArrayQueue {
 		if (head == QUEUE_SIZE) {
 			head = 0;
 		}
-		
 		count--;
-		
 		if (count == 0) {
 			head = tail = 0;
 		}
@@ -50,14 +47,12 @@ public class ArrayQueue {
 		if (isEmpty()) {
 			return null;
 		}
-		
 		return queue[head];
 	}
 	
 	public void clear() {
 		count = head = tail = 0;
 		queue = new Integer[32];
-
 	}
 	
 	public boolean isFull() {
