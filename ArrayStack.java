@@ -15,7 +15,6 @@ public class ArrayStack {
 			// Stack overflow
 			return false;
 		}
-		
 		stack[count++] = data;
 		return true;
 	}
@@ -25,10 +24,8 @@ public class ArrayStack {
 			// Stack underflow
 			return null;
 		}
-		
 		Integer rtn = peek();
 		count--;
-		
 		return rtn;
 	}
 
@@ -44,7 +41,6 @@ public class ArrayStack {
 		if (isEmpty()) {
 			return null;
 		}
-		
 		return stack[count-1];
 	}
 
@@ -58,29 +54,5 @@ public class ArrayStack {
 
 	public void clear() {
 		count = 0;
-		
-//		while(!isEmpty()) {
-//			pop();
-//		}
 	}
-	
-	public String toString() {
-		if (isEmpty()) {
-			return "<Empty>";
-		} else {
-			String rtn = "";
-			for (int i = count-1; i >= 0; i--) {
-				if (i == count-1) {
-					rtn += "top -> ";
-				} else {
-					rtn += "       ";
-				}
-				
-				rtn += stack[i] + "\n";
-			}
-
-			return rtn;
-		}
-	}
-	
 }
