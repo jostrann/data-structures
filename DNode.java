@@ -23,7 +23,4 @@ public class DNode {
 	public void setNext(DNode next) {
 		this.next = next;
 	}
-	
-	
-
 }
