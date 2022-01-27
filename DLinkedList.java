@@ -5,7 +5,6 @@ public class DLinkedList {
 	private DNode tail;
 	private int count;
 	
-	
 	public void addToHead(String data) {
 		DNode nn = new DNode();
 		nn.setData(data);
