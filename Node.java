@@ -1,9 +1,7 @@
 
 public class Node {
 	private Node next;
-	
 	private String data;
-
 
 	public Node getNext() {
 		return next;
