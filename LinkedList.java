@@ -93,7 +93,6 @@ public class LinkedList {
 		}
 	}
 	
-	
 	public boolean search(String data) {
 		return (internalSearch(data, true) != null);
 	}
