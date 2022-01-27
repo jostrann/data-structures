@@ -67,31 +67,4 @@ public class ArrayQueue {
 	public boolean isEmpty() {
 		return (count == 0);
 	}
-	
-	public String toString() {
-		String rtn = "";
-		rtn += "Queue count: " + count + "\n";
-		rtn += "Queue head : " + head + "\n";
-		rtn += "Queue tail : " + tail + "\n\n";
-		
-		if (isEmpty()) {
-			rtn +=  "<Empty>";
-			return rtn;
-		}
-
-		int tmpIndex = head;
-		for (int i = 0; i < count; i++) {
-			
-			if (tmpIndex == head) {
-				rtn += "head -> ";
-			} else {
-				rtn += "        ";
-			}
-			rtn += queue[tmpIndex++] + "\n";
-			if (tmpIndex == QUEUE_SIZE) {
-				tmpIndex = 0;
-			}
-		}
-		return rtn;
-	}
 }
